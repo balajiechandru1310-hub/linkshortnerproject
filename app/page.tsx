@@ -11,14 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import {
-  Link2,
-  BarChart3,
-  Shield,
-  Zap,
-  Globe,
-  Lock,
-} from "lucide-react";
+import { Link2, BarChart3, Shield, Zap, Globe, Lock } from "lucide-react";
 
 export default async function Home() {
   const { userId } = await auth();
@@ -46,9 +39,6 @@ export default async function Home() {
           <SignUpButton mode="modal">
             <Button size="lg">Get Started Free</Button>
           </SignUpButton>
-          <Button variant="outline" size="lg" asChild>
-            <a href="#features">Learn More</a>
-          </Button>
         </div>
       </section>
 
@@ -160,8 +150,7 @@ export default async function Home() {
               <Lock className="h-10 w-10 text-primary mb-2" />
               <CardTitle>Privacy First</CardTitle>
               <CardDescription>
-                Your data is private and secure. We never sell your
-                information.
+                Your data is private and secure. We never sell your information.
               </CardDescription>
             </CardHeader>
             <CardContent>
