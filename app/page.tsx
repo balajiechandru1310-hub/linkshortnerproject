@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Link2, BarChart3, Shield, Zap, Globe, Lock } from "lucide-react";
+import { AuthRedirect } from "@/components/auth-redirect";
 
 export default async function Home() {
   const { userId } = await auth();
@@ -23,6 +24,7 @@ export default async function Home() {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <AuthRedirect />
       {/* Hero Section */}
       <section className="container flex flex-col items-center justify-center gap-8 py-24 md:py-32">
         <Badge variant="secondary">Fast & Secure Link Shortening</Badge>
